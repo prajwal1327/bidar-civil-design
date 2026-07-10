@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Bidar Civil Design | Luxury Construction & Architecture',
-  description: 'Premium construction, architecture, engineering and home design services based in Bidar, Karnataka.',
+  title: 'Hatkar Construction & Consulting | Premium Construction Firm',
+  description: 'Hatkar Construction & Consulting Firm delivers luxury homes, structural engineering, interior architecture and turnkey consulting across Karnataka.',
   openGraph: {
-    title: 'Bidar Civil Design',
-    description: 'Luxury construction, turnkey architecture, interior design, AutoCAD drafting, BIM and structural engineering services.',
+    title: 'Hatkar Construction & Consulting',
+    description: 'Premium construction, architecture, engineering and consulting services led by Er. Pramod Hatkar.',
     type: 'website',
   },
 };

@@ -1,4 +1,4 @@
-# Bidar Civil Design
+# Hatkar Construction & Consulting
 
 A premium construction, architecture, interior design and engineering website built with Next.js, TypeScript, Tailwind CSS, Framer Motion, React Hook Form, Zod, and Lucide icons.
 

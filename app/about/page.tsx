@@ -1,15 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SectionHeader } from '@/components/SectionHeader';
-
-const team = [
-  { name: 'Aarav Kulkarni', role: 'Lead Architect' },
-  { name: 'Priya Banerjee', role: 'Interior Design Director' },
-  { name: 'Sanjeev Patil', role: 'Senior Structural Engineer' },
-  { name: 'Maya Reddy', role: 'Project Manager' },
-];
 
 const standards = [
   'IS 456: Structural Concrete Design',
@@ -34,22 +26,22 @@ export default function AboutPage() {
         <section className="container">
           <div className="grid gap-12 lg:grid-cols-[0.9fr_0.9fr] items-center">
             <div className="space-y-6">
-              <p className="text-sm uppercase tracking-[0.35em] text-brand.gold">About Bidar Civil Design</p>
-              <h1 className="text-4xl font-semibold leading-tight">A premium construction and architecture firm shaping modern living in Bidar and Karnataka.</h1>
-              <p className="max-w-2xl text-sm leading-8 text-slate-300">We combine luxury home construction, structural engineering, interior architecture and civil consultancy to deliver end-to-end, permit-ready buildings with exceptional finishes.</p>
+              <p className="text-sm uppercase tracking-[0.35em] text-brand.gold">About Hatkar Construction</p>
+              <h1 className="text-4xl font-semibold leading-tight">A premium construction and consulting firm shaping intelligent living spaces across Karnataka.</h1>
+              <p className="max-w-2xl text-sm leading-8 text-slate-300">Hatkar Construction & Consulting combines luxury home building, structural engineering, interior architecture and civil consultancy to deliver turnkey buildings with modern aesthetics, approvals and long-term performance.</p>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[2rem] border border-white/10 bg-[#09121c] p-7">
                   <p className="text-sm text-slate-400">Headquarters</p>
                   <p className="mt-2 text-lg font-semibold text-white">Bidar, Karnataka</p>
                 </div>
                 <div className="rounded-[2rem] border border-white/10 bg-[#09121c] p-7">
-                  <p className="text-sm text-slate-400">Industry</p>
-                  <p className="mt-2 text-lg font-semibold text-white">Construction, Architecture, Engineering, Interior Design</p>
+                  <p className="text-sm text-slate-400">Firm leader</p>
+                  <p className="mt-2 text-lg font-semibold text-white">Er. Pramod Hatkar</p>
                 </div>
               </div>
             </div>
             <div className="glass-card rounded-[2rem] border border-white/10 overflow-hidden bg-white/5">
-              <Image src="/assets/hero.jpg" alt="Our firm" width={900} height={900} className="h-full w-full object-cover" />
+              <Image src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Hatkar Construction team" width={900} height={900} className="h-full w-full object-cover" />
             </div>
           </div>
         </section>
@@ -59,9 +51,9 @@ export default function AboutPage() {
             <SectionHeader eyebrow="Our mission" title="Deliver inspiring architecture with strong engineering intelligence" description="We build beautiful, functional homes and commercial spaces with disciplined project delivery, structural reliability and unmatched client care." />
             <div className="grid gap-6 md:grid-cols-3">
               {[
-                { title: 'Vision', description: 'To be the benchmark for luxury construction and intelligent design across bidar region and beyond.' },
-                { title: 'Mission', description: 'To deliver premium, safe and sustainable built environments with modern aesthetics and local expertise.' },
-                { title: 'Values', description: 'Precision, trust, transparency, and design-led engineering are central to every decision we make.' },
+                { title: 'Vision', description: 'To be the benchmark for luxury construction and intelligent design throughout Karnataka and beyond.' },
+                { title: 'Mission', description: 'To deliver premium, safe and sustainable built environments with modern aesthetics and local approvals expertise.' },
+                { title: 'Values', description: 'Precision, trust, transparency and design-led engineering are central to every decision we make.' },
               ].map((item) => (
                 <div key={item.title} className="glass-card rounded-[2rem] border border-white/10 p-7">
                   <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
@@ -75,12 +67,17 @@ export default function AboutPage() {
         <section className="container">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr]">
             <div>
-              <SectionHeader eyebrow="Meet our team" title="Engineers, architects and design leaders" description="A multidisciplinary team aligned on quality, approvals, timelines and luxury execution." />
+              <SectionHeader eyebrow="Hatkar difference" title="Quality, approvals and modern construction managed end-to-end" description="We bring civil engineering control, architectural design and build management together for high-grade residential and commercial outcomes." />
               <div className="grid gap-4 sm:grid-cols-2">
-                {team.map((member) => (
-                  <div key={member.name} className="glass-card rounded-[2rem] border border-white/10 p-6">
-                    <p className="text-lg font-semibold text-white">{member.name}</p>
-                    <p className="mt-2 text-sm text-slate-400">{member.role}</p>
+                {[
+                  { title: 'Turnkey delivery', description: 'From concept to final handover, all disciplines aligned under one project workflow.' },
+                  { title: 'Performance-first design', description: 'Structural efficiency, modern materials and elegant finishes combined with durable execution.' },
+                  { title: 'Approval-ready documentation', description: 'Complete drawings, calculations and permit support for Karnataka authorities.' },
+                  { title: 'Premium client care', description: 'Transparent budgets, timelines and on-site governance for every build.' },
+                ].map((item) => (
+                  <div key={item.title} className="glass-card rounded-[2rem] border border-white/10 p-7">
+                    <h3 className="text-lg font-semibold text-white mb-3">{item.title}</h3>
+                    <p className="text-sm leading-7 text-slate-300">{item.description}</p>
                   </div>
                 ))}
               </div>
@@ -88,7 +85,7 @@ export default function AboutPage() {
             <div className="space-y-6 rounded-[2rem] border border-white/10 bg-[#08121d] p-8">
               <p className="text-sm uppercase tracking-[0.35em] text-brand.gold">Quality & Safety</p>
               <h2 className="text-3xl font-semibold text-white">Certifications, standards and safety controls</h2>
-              <p className="text-sm leading-7 text-slate-300">Our team follows best practices across civil engineering, structural design, MEP planning and construction management to keep every project safe, compliant and built for lifespan.</p>
+              <p className="text-sm leading-7 text-slate-300">Our approach follows best practices across civil engineering, structural design, MEP planning and construction management so every project is safe, compliant and built for lifespan.</p>
               <ul className="space-y-3 text-sm text-slate-300">
                 {standards.map((item) => (
                   <li key={item} className="flex gap-3"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-brand.gold" />{item}</li>

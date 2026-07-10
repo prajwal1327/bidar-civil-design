@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X, Phone, Mail, Sparkles } from 'lucide-react';
+import { Menu, X, Phone, Sparkles } from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [
@@ -21,11 +21,11 @@ export function Navbar() {
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
-            <Image src="/assets/logo.jpg" alt="Bidar Civil Design" fill style={{ objectFit: 'cover' }} />
+            <Image src="/assets/logo.jpg" alt="Hatkar Construction & Consulting" fill style={{ objectFit: 'cover' }} />
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-brand.gold">Bidar Civil Design</p>
-            <p className="text-sm text-slate-300">Bidar, Karnataka</p>
+            <p className="text-xs uppercase tracking-[0.24em] text-brand.gold">Hatkar Construction</p>
+            <p className="text-sm text-slate-300">Construction & Consulting Firm</p>
           </div>
         </Link>
 
@@ -36,10 +36,10 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <Link href="tel:+918000000000" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:border-brand.gold/40 hover:text-brand.gold">
-            <Phone className="h-4 w-4" /> Call Now
+          <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:border-brand.gold/40 hover:text-brand.gold">
+            <Phone className="h-4 w-4" /> +91 97384 17053
           </Link>
-          <button className="rounded-full bg-brand.gold px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-[#b08f5d]">Get Free Quote</button>
+          <Link href="/contact" className="rounded-full bg-brand.gold px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-[#b08f5d]">Get Free Quote</Link>
         </div>
 
         <button className="md:hidden text-slate-200" onClick={() => setOpen(!open)} aria-label="Toggle menu">
@@ -54,10 +54,10 @@ export function Navbar() {
               <Link key={item.href} href={item.href} className="text-base font-medium text-slate-100" onClick={() => setOpen(false)}>{item.label}</Link>
             ))}
             <div className="mt-4 flex flex-col gap-3">
-              <Link href="tel:+918000000000" className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white">
-                <Phone className="h-4 w-4" /> Call Now
+              <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white">
+                <Phone className="h-4 w-4" /> +91 97384 17053
               </Link>
-              <Link href="https://wa.me/918000000000" className="inline-flex items-center gap-2 rounded-2xl bg-brand.gold px-4 py-3 text-sm font-semibold text-slate-950">
+              <Link href="https://wa.me/919738417053" className="inline-flex items-center gap-2 rounded-2xl bg-brand.gold px-4 py-3 text-sm font-semibold text-slate-950">
                 <Sparkles className="h-4 w-4" /> WhatsApp
               </Link>
             </div>

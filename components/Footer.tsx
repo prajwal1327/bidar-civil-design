@@ -14,13 +14,13 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-[#060a0f] py-16">
       <div className="container grid gap-10 lg:grid-cols-[1.6fr_1fr_1fr]">
         <div className="space-y-5">
-          <p className="text-sm uppercase tracking-[0.32em] text-brand.gold">Bidar Civil Design</p>
-          <h3 className="text-2xl font-semibold text-white">Luxury Building & Interior Design in Bidar</h3>
-          <p className="text-sm leading-7 text-slate-300">Delivering architecture, civil engineering, turnkey construction and AutoCAD services with premium project governance and local expertise.</p>
+          <p className="text-sm uppercase tracking-[0.32em] text-brand.gold">Hatkar Construction</p>
+          <h3 className="text-2xl font-semibold text-white">Premium construction, consulting and engineering in Karnataka</h3>
+          <p className="text-sm leading-7 text-slate-300">Delivering luxury homes, commercial build solutions, structural design and consulting with refined finishes and high grade execution.</p>
           <div className="space-y-3 text-sm text-slate-300">
             <p className="flex items-center gap-3"><MapPin className="h-4 w-4 text-brand.gold" /> Bidar, Karnataka, India</p>
-            <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-brand.gold" /> +91 80000 00000</p>
-            <p className="flex items-center gap-3"><Mail className="h-4 w-4 text-brand.gold" /> contact@bidarcivildesign.com</p>
+            <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-brand.gold" /> +91 97384 17053</p>
+            <p className="flex items-center gap-3"><Mail className="h-4 w-4 text-brand.gold" /> contact@hatkarconstruction.com</p>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="container mt-10 border-t border-white/10 pt-6 text-sm text-slate-500 text-center">© 2026 Bidar Civil Design. Designed for construction, architecture and engineering excellence.</div>
+      <div className="container mt-10 border-t border-white/10 pt-6 text-sm text-slate-500 text-center">© 2026 Hatkar Construction & Consulting. Designed for construction, architecture and engineering excellence.</div>
     </footer>
   );
 }

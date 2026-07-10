@@ -125,7 +125,7 @@ export function EstimatorPanel() {
       <div className="glass-card rounded-[2rem] border border-white/10 p-8">
         <h3 className="text-xl font-semibold text-white mb-4">Quick Estimate Summary</h3>
         <div className="space-y-4 text-sm text-slate-300">
-          <p>City: Bidar, Karnataka</p>
+          <p>Region: Karnataka</p>
           <p>Plot Dimensions: {actualPlot}</p>
           <p>Number of Floors: {floors}</p>
           <p>Room distribution: {bedrooms} BR, {bathrooms} BA, {kitchen} Kitchen{ kitchen > 1 ? 's' : '' }</p>
