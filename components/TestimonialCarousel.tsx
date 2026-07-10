@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Testimonial {
   quote: string;
@@ -15,28 +15,45 @@ interface TestimonialCarouselProps {
 
 export function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) {
   const [index, setIndex] = useState(0);
-  const current = testimonials[index];
+  const t = testimonials[index];
 
   return (
-    <div className="glass-card rounded-[2rem] border border-slate-200 p-8">
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3 text-brand.primary">
-          <Quote className="h-6 w-6" />
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Client Review</p>
-        </div>
-        <div className="flex items-center gap-3">
-          <button onClick={() => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)} className="rounded-full border border-slate-200 bg-slate-100 p-3 text-slate-700 transition hover:border-brand.primary/40">
-            <ChevronLeft className="h-4 w-4" />
-          </button>
-          <button onClick={() => setIndex((prev) => (prev + 1) % testimonials.length)} className="rounded-full border border-slate-200 bg-slate-100 p-3 text-slate-700 transition hover:border-brand.primary/40">
-            <ChevronRight className="h-4 w-4" />
-          </button>
-        </div>
+    <div className="relative">
+      <div className="max-w-3xl mx-auto text-center">
+        <div className="text-[#c4922a] text-8xl font-serif leading-none mb-2 opacity-40 select-none">"</div>
+        <p className="text-xl md:text-2xl font-serif text-white leading-relaxed mb-8">
+          {t.quote}
+        </p>
+        <div className="w-12 h-0.5 bg-[#c4922a] mx-auto mb-6" />
+        <p className="font-semibold text-white text-base">{t.name}</p>
+        <p className="text-sm text-slate-400 mt-1">{t.title}</p>
       </div>
-      <p className="mt-8 text-xl leading-9 text-slate-900">“{current.quote}”</p>
-      <div className="mt-7 text-sm text-slate-700">
-        <p className="font-semibold text-slate-900">{current.name}</p>
-        <p>{current.title}</p>
+
+      <div className="flex justify-center items-center gap-4 mt-12">
+        <button
+          onClick={() => setIndex((i) => (i - 1 + testimonials.length) % testimonials.length)}
+          className="rounded-full border border-white/20 p-3 text-white hover:border-[#c4922a] hover:text-[#c4922a] transition"
+          aria-label="Previous testimonial"
+        >
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+        <div className="flex items-center gap-2">
+          {testimonials.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              className={`h-1.5 rounded-full transition-all duration-300 ${i === index ? 'bg-[#c4922a] w-6' : 'bg-white/30 w-1.5'}`}
+              aria-label={`Go to testimonial ${i + 1}`}
+            />
+          ))}
+        </div>
+        <button
+          onClick={() => setIndex((i) => (i + 1) % testimonials.length)}
+          className="rounded-full border border-white/20 p-3 text-white hover:border-[#c4922a] hover:text-[#c4922a] transition"
+          aria-label="Next testimonial"
+        >
+          <ChevronRight className="h-5 w-5" />
+        </button>
       </div>
     </div>
   );

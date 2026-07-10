@@ -9,20 +9,22 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          dark: '#f8fafc',
-          surface: '#ffffff',
-          primary: '#0f4c81',
-          secondary: '#2563eb',
-          gold: '#f59e0b',
-          muted: '#64748b',
-          accent: '#eff6ff',
+          dark: '#0d1117',
+          navy: '#0f1b33',
+          'navy-light': '#162040',
+          gold: '#c4922a',
+          'gold-light': '#e8b84b',
+          cream: '#f8f4ee',
+          muted: '#6b7280',
         },
       },
-      boxShadow: {
-        glass: '0 24px 80px rgba(15, 23, 42, 0.08)',
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 32%), radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.12), transparent 22%)',
+      boxShadow: {
+        premium: '0 20px 60px rgba(15, 23, 42, 0.10)',
+        card: '0 4px 24px rgba(15, 23, 42, 0.07)',
       },
     },
   },

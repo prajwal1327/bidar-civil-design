@@ -14,23 +14,50 @@ interface ProjectCardProps {
 
 export function ProjectCard({ title, category, location, area, duration, budget, image, services }: ProjectCardProps) {
   return (
-    <article className="glass-card overflow-hidden rounded-[2rem] border border-slate-200 shadow-glass">
-      <div className="relative h-72 w-full">
-        <Image src={image} alt={title} fill style={{ objectFit: 'cover' }} className="brightness-100" />
+    <article className="group overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm hover:shadow-xl transition-all duration-400">
+      <div className="relative h-64 w-full overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          fill
+          style={{ objectFit: 'cover' }}
+          className="transition-transform duration-700 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+        <div className="absolute bottom-4 left-4">
+          <span className="inline-block bg-[#c4922a] text-white text-xs uppercase tracking-widest px-3 py-1 rounded-sm">
+            {category}
+          </span>
+        </div>
       </div>
       <div className="p-6">
-        <p className="text-xs uppercase tracking-[0.32em] text-brand.gold mb-3">{category}</p>
-        <h3 className="text-2xl font-semibold text-slate-900 mb-3">{title}</h3>
-        <p className="text-sm text-slate-600 leading-6 mb-5">Complete residential and commercial delivery with architecture, structural engineering and interior integration.</p>
-        <div className="grid gap-3 sm:grid-cols-2 text-sm text-slate-700 mb-5">
-          <p><span className="font-semibold text-slate-900">Location:</span> {location}</p>
-          <p><span className="font-semibold text-slate-900">Budget:</span> {budget}</p>
-          <p><span className="font-semibold text-slate-900">Area:</span> {area}</p>
-          <p><span className="font-semibold text-slate-900">Duration:</span> {duration}</p>
+        <h3 className="text-xl font-semibold text-[#0d1117] mb-2">{title}</h3>
+        <p className="text-sm text-slate-600 leading-6 mb-5">
+          Complete delivery with architecture, structural engineering and interior integration.
+        </p>
+        <div className="grid grid-cols-2 gap-3 text-sm text-slate-600 mb-5">
+          <div>
+            <span className="block text-xs text-slate-400 uppercase tracking-wider mb-1">Location</span>
+            {location}
+          </div>
+          <div>
+            <span className="block text-xs text-slate-400 uppercase tracking-wider mb-1">Budget</span>
+            {budget}
+          </div>
+          <div>
+            <span className="block text-xs text-slate-400 uppercase tracking-wider mb-1">Area</span>
+            {area}
+          </div>
+          <div>
+            <span className="block text-xs text-slate-400 uppercase tracking-wider mb-1">Duration</span>
+            {duration}
+          </div>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {services.map((service) => (
-            <span key={service} className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs text-slate-700">{service}</span>
+        <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-100">
+          {services.map((s) => (
+            <span key={s} className="text-xs text-slate-600 border border-slate-200 px-3 py-1 rounded-sm">
+              {s}
+            </span>
           ))}
         </div>
       </div>

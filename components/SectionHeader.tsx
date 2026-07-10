@@ -4,15 +4,26 @@ interface SectionHeaderProps {
   eyebrow: string;
   title: string;
   description?: string;
+  align?: 'center' | 'left';
+  light?: boolean;
 }
 
-export function SectionHeader({ eyebrow, title, description }: SectionHeaderProps) {
+export function SectionHeader({ eyebrow, title, description, align = 'center', light = false }: SectionHeaderProps) {
+  const isCenter = align === 'center';
+
   return (
-    <div className="max-w-3xl text-center mx-auto mb-10">
-      <p className="text-sm uppercase tracking-[0.35em] text-brand.primary font-semibold mb-3">{eyebrow}</p>
-      <h2 className="text-3xl md:text-4xl font-semibold text-slate-900">{title}</h2>
+    <div className={`max-w-3xl mb-14 ${isCenter ? 'mx-auto text-center' : ''}`}>
+      <p className={`text-xs uppercase tracking-[0.35em] font-medium mb-4 ${light ? 'text-[#e8b84b]' : 'text-[#c4922a]'}`}>
+        {eyebrow}
+      </p>
+      <div className={`w-12 h-0.5 bg-[#c4922a] mb-5 ${isCenter ? 'mx-auto' : ''}`} />
+      <h2 className={`font-serif text-3xl md:text-4xl font-semibold leading-tight ${light ? 'text-white' : 'text-[#0d1117]'}`}>
+        {title}
+      </h2>
       {description ? (
-        <p className="mt-4 text-sm md:text-base text-slate-600 leading-7">{description}</p>
+        <p className={`mt-5 text-sm md:text-base leading-8 ${light ? 'text-slate-300' : 'text-slate-600'}`}>
+          {description}
+        </p>
       ) : null}
     </div>
   );
