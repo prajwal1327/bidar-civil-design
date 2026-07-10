@@ -31,7 +31,7 @@ export function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8 text-sm text-slate-200">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="transition hover:text-brand.gold">{item.label}</Link>
+            <Link key={item.href} href={item.href as any} className="transition hover:text-brand.gold">{item.label}</Link>
           ))}
         </nav>
 

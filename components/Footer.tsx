@@ -28,7 +28,7 @@ export function Footer() {
           <p className="text-sm uppercase tracking-[0.32em] text-brand.gold mb-5">Quick Links</p>
           <div className="grid gap-3 text-sm text-slate-300">
             {footerLinks.map((item) => (
-              <Link key={item.href} href={item.href} className="transition hover:text-white">{item.label}</Link>
+              <Link key={item.href} href={item.href as any} className="transition hover:text-white">{item.label}</Link>
             ))}
           </div>
         </div>
