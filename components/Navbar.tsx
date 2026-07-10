@@ -11,7 +11,7 @@ const navItems = [
   { label: 'Services', href: '/services' },
   { label: 'Projects', href: '/projects' },
   { label: 'Contact', href: '/contact' },
-];
+] as const;
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
