@@ -1,0 +1,16 @@
+{
+  "name": "Bidar Civil Design",
+  "short_name": "Bidar Civil",
+  "description": "Luxury construction, architecture, interior design and engineering services from Bidar, Karnataka.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060809",
+  "theme_color": "#c9a16f",
+  "icons": [
+    {
+      "src": "/assets/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
