@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { SectionHeader } from '@/components/SectionHeader';
@@ -21,7 +20,7 @@ export default function HomePage() {
           <div className="container grid gap-12 lg:grid-cols-[1.1fr_0.9fr] items-center">
             <div className="space-y-6">
               <span className="inline-flex items-center gap-3 rounded-full border border-brand.gold/35 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-brand.gold">Premium architecture & construction | Bidar, Karnataka</span>
-              <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-5xl font-semibold leading-tight tracking-[-0.04em] md:text-6xl">Luxury construction, modern architecture and turnkey civil design crafted for premium living.</motion.h1>
+              <h1 className="text-5xl font-semibold leading-tight tracking-[-0.04em] md:text-6xl">Luxury construction, modern architecture and turnkey civil design crafted for premium living.</h1>
               <p className="max-w-2xl text-sm leading-8 text-slate-300">Bidar Civil Design delivers elegant residential, commercial and institutional projects with end-to-end planning, structural engineering, interior design and AutoCAD drafting expertise.</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/contact" className="rounded-full bg-brand.gold px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-[#b08f5d]">Get Free Quote</Link>
