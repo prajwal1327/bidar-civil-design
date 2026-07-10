@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "pages-build": "npm run build && npm run export",
     "postbuild": "node -e \"const fs = require('fs'); const path = require('path'); const cache = path.join(process.cwd(), '.next', 'cache'); if (fs.existsSync(cache)) fs.rmSync(cache, { recursive: true, force: true });\"",
     "start": "next start",
     "lint": "next lint"
