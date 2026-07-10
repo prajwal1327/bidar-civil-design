@@ -9,18 +9,20 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          dark: '#0f1316',
-          surface: '#111820',
-          gold: '#c9a16f',
-          muted: '#8f958f',
-          accent: '#f3e6d0',
+          dark: '#f8fafc',
+          surface: '#ffffff',
+          primary: '#0f4c81',
+          secondary: '#2563eb',
+          gold: '#f59e0b',
+          muted: '#64748b',
+          accent: '#eff6ff',
         },
       },
       boxShadow: {
-        glass: '0 24px 80px rgba(9, 16, 24, 0.24)',
+        glass: '0 24px 80px rgba(15, 23, 42, 0.08)',
       },
       backgroundImage: {
-        'hero-gradient': 'radial-gradient(circle at top left, rgba(201,161,111,0.16), transparent 32%), radial-gradient(circle at bottom right, rgba(255,255,255,0.08), transparent 22%)',
+        'hero-gradient': 'radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 32%), radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.12), transparent 22%)',
       },
     },
   },

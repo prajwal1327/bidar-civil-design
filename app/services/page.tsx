@@ -15,14 +15,14 @@ const serviceDetails = [
 
 export default function ServicesPage() {
   return (
-    <div className="bg-brand.dark text-white">
+    <div className="bg-brand.surface text-slate-900">
       <Navbar />
       <main className="space-y-20 py-16">
         <section className="container">
           <div className="space-y-6">
-            <p className="text-sm uppercase tracking-[0.35em] text-brand.gold">Our capabilities</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-brand.primary">Our capabilities</p>
             <h1 className="text-4xl font-semibold leading-tight">Comprehensive construction and design services for every project stage.</h1>
-            <p className="max-w-2xl text-sm leading-8 text-slate-300">From a luxury villa concept to full interior execution and civil engineering consultancy, our services cover planning, approvals, costing and delivery.</p>
+            <p className="max-w-2xl text-sm leading-8 text-slate-600">From a luxury villa concept to full interior execution and civil engineering consultancy, our services cover planning, approvals, costing and delivery.</p>
           </div>
         </section>
 
@@ -30,15 +30,15 @@ export default function ServicesPage() {
           <SectionHeader eyebrow="Featured services" title="Specialized services for architecture, engineering and home design" description="Each service is delivered with premium attention to detail, technical compliance and aesthetic clarity." />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {serviceDetails.map((service) => (
-              <div key={service.title} className="glass-card rounded-[2rem] border border-white/10 p-7">
-                <h2 className="text-xl font-semibold text-white mb-3">{service.title}</h2>
-                <p className="text-sm leading-7 text-slate-300">{service.description}</p>
+              <div key={service.title} className="glass-card rounded-[2rem] border border-slate-200 bg-slate-50 p-7">
+                <h2 className="text-xl font-semibold text-slate-900 mb-3">{service.title}</h2>
+                <p className="text-sm leading-7 text-slate-600">{service.description}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="py-16 bg-[#061116]">
+        <section className="py-16 bg-slate-50">
           <div className="container">
             <SectionHeader eyebrow="Service stack" title="Every modern project needs these capabilities" description="We integrate planning, drafting, engineering, approvals and construction supervision under one premium service umbrella." />
             <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">

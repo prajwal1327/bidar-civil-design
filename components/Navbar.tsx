@@ -17,10 +17,10 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080d12]/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl shadow-sm shadow-slate-200/40">
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+          <div className="relative h-11 w-11 overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
             <Image src="/assets/logo.jpg" alt="Hatkar Construction & Consulting" fill style={{ objectFit: 'cover' }} />
           </div>
           <div>
@@ -29,35 +29,35 @@ export function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm text-slate-200">
+        <nav className="hidden md:flex items-center gap-8 text-sm text-slate-700">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href as any} className="transition hover:text-brand.gold">{item.label}</Link>
+            <Link key={item.href} href={item.href as any} className="transition hover:text-brand.primary">{item.label}</Link>
           ))}
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white transition hover:border-brand.gold/40 hover:text-brand.gold">
+          <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm text-slate-900 transition hover:border-brand.primary/40 hover:text-brand.primary">
             <Phone className="h-4 w-4" /> +91 97384 17053
           </Link>
-          <Link href="/contact" className="rounded-full bg-brand.gold px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-[#b08f5d]">Get Free Quote</Link>
+          <Link href="/contact" className="rounded-full bg-brand.primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand.secondary">Get Free Quote</Link>
         </div>
 
-        <button className="md:hidden text-slate-200" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button className="md:hidden text-slate-900" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
       {open ? (
-        <div className="md:hidden border-t border-white/10 bg-[#061014]/95 px-6 py-6 backdrop-blur-xl">
+        <div className="md:hidden border-t border-slate-200 bg-white/95 px-6 py-6 backdrop-blur-xl">
           <div className="flex flex-col gap-4">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="text-base font-medium text-slate-100" onClick={() => setOpen(false)}>{item.label}</Link>
+              <Link key={item.href} href={item.href} className="text-base font-medium text-slate-700" onClick={() => setOpen(false)}>{item.label}</Link>
             ))}
             <div className="mt-4 flex flex-col gap-3">
-              <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white">
+              <Link href="tel:+919738417053" className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-slate-100 px-4 py-3 text-sm text-slate-900">
                 <Phone className="h-4 w-4" /> +91 97384 17053
               </Link>
-              <Link href="https://wa.me/919738417053" className="inline-flex items-center gap-2 rounded-2xl bg-brand.gold px-4 py-3 text-sm font-semibold text-slate-950">
+              <Link href="https://wa.me/919738417053" className="inline-flex items-center gap-2 rounded-2xl bg-brand.primary px-4 py-3 text-sm font-semibold text-white hover:bg-brand.secondary">
                 <Sparkles className="h-4 w-4" /> WhatsApp
               </Link>
             </div>

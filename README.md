@@ -7,7 +7,7 @@ A premium construction, architecture, interior design and engineering website bu
 - `app/` - Next.js app routes and page files
 - `components/` - reusable UI components
 - `lib/` - shared data and content
-- `public/assets/` - branding and hero visuals
+- `public/assets/` - branding visuals
 - `styles/` - global styling and Tailwind configuration
 
 ## Run locally
@@ -25,6 +25,6 @@ A premium construction, architecture, interior design and engineering website bu
 
 ## Notes
 
-- The site uses the existing image assets in `public/assets/logo.jpg` and `public/assets/hero.jpg`.
-- The brand is configured for a luxury dark + gold aesthetic with strong architecture-focused layouts.
+- The site uses the existing image asset in `public/assets/logo.jpg` and remote construction imagery for hero sections.
+- The brand is configured for a bright premium look with blue and gold accents.
 - To deploy on Cloudflare Pages, use the production build output from `npm run build` and set the root to the project folder.

@@ -15,23 +15,23 @@ const projectTypes = [
 
 export default function ProjectsPage() {
   return (
-    <div className="bg-brand.dark text-white">
+    <div className="bg-brand.surface text-slate-900">
       <Navbar />
       <main className="space-y-20 py-16">
         <section className="container">
           <div className="space-y-6">
-            <p className="text-sm uppercase tracking-[0.35em] text-brand.gold">Our portfolio</p>
+            <p className="text-sm uppercase tracking-[0.35em] text-brand.primary">Our portfolio</p>
             <h1 className="text-4xl font-semibold leading-tight">Completed and ongoing projects that define modern living.</h1>
-            <p className="max-w-2xl text-sm leading-8 text-slate-300">We deliver curated projects across residential, commercial, interiors and luxury villa segments with a strong local presence in Karnataka.</p>
+            <p className="max-w-2xl text-sm leading-8 text-slate-600">We deliver curated projects across residential, commercial, interiors and luxury villa segments with a strong local presence in Karnataka.</p>
           </div>
         </section>
 
         <section className="container">
           <div className="grid gap-4 sm:grid-cols-3">
             {projectTypes.map((type) => (
-              <div key={type} className="glass-card rounded-[2rem] border border-white/10 p-6 text-center">
-                <h3 className="text-lg font-semibold text-white mb-2">{type}</h3>
-                <p className="text-sm text-slate-400">Tailored planning, design and delivery for the {type.toLowerCase()} segment.</p>
+              <div key={type} className="glass-card rounded-[2rem] border border-slate-200 bg-slate-50 p-6 text-center">
+                <h3 className="text-lg font-semibold text-slate-900 mb-2">{type}</h3>
+                <p className="text-sm text-slate-600">Tailored planning, design and delivery for the {type.toLowerCase()} segment.</p>
               </div>
             ))}
           </div>

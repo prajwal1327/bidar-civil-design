@@ -32,36 +32,36 @@ export function ContactForm() {
   };
 
   return (
-    <div className="glass-card rounded-[2rem] border border-white/10 p-8">
-      <p className="text-sm uppercase tracking-[0.3em] text-brand.gold mb-3">Request Consultation</p>
-      <h3 className="text-2xl font-semibold text-white mb-6">Start your build with a free quote</h3>
+    <div className="glass-card rounded-[2rem] border border-slate-200 p-8">
+      <p className="text-sm uppercase tracking-[0.3em] text-brand.primary mb-3">Request Consultation</p>
+      <h3 className="text-2xl font-semibold text-slate-900 mb-6">Start your build with a free quote</h3>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <div className="grid gap-4 sm:grid-cols-2">
-          <label className="block text-sm text-slate-300">
+          <label className="block text-sm text-slate-700">
             Name
-            <input {...register('name')} className="mt-2 w-full rounded-3xl border border-white/10 bg-[#08101a] px-4 py-3 text-white outline-none transition focus:border-brand.gold" />
-            {errors.name ? <span className="mt-2 block text-xs text-rose-300">{errors.name.message}</span> : null}
+            <input {...register('name')} className="mt-2 w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-brand.primary" />
+            {errors.name ? <span className="mt-2 block text-xs text-rose-600">{errors.name.message}</span> : null}
           </label>
-          <label className="block text-sm text-slate-300">
+          <label className="block text-sm text-slate-700">
             Email
-            <input {...register('email')} className="mt-2 w-full rounded-3xl border border-white/10 bg-[#08101a] px-4 py-3 text-white outline-none transition focus:border-brand.gold" />
-            {errors.email ? <span className="mt-2 block text-xs text-rose-300">{errors.email.message}</span> : null}
+            <input {...register('email')} className="mt-2 w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-brand.primary" />
+            {errors.email ? <span className="mt-2 block text-xs text-rose-600">{errors.email.message}</span> : null}
           </label>
         </div>
-        <label className="block text-sm text-slate-300">
+        <label className="block text-sm text-slate-700">
           Phone
-          <input {...register('phone')} className="mt-2 w-full rounded-3xl border border-white/10 bg-[#08101a] px-4 py-3 text-white outline-none transition focus:border-brand.gold" />
-          {errors.phone ? <span className="mt-2 block text-xs text-rose-300">{errors.phone.message}</span> : null}
+          <input {...register('phone')} className="mt-2 w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-brand.primary" />
+          {errors.phone ? <span className="mt-2 block text-xs text-rose-600">{errors.phone.message}</span> : null}
         </label>
-        <label className="block text-sm text-slate-300">
+        <label className="block text-sm text-slate-700">
           Project Brief
-          <textarea {...register('message')} rows={4} className="mt-2 w-full rounded-3xl border border-white/10 bg-[#08101a] px-4 py-3 text-white outline-none transition focus:border-brand.gold" />
-          {errors.message ? <span className="mt-2 block text-xs text-rose-300">{errors.message.message}</span> : null}
+          <textarea {...register('message')} rows={4} className="mt-2 w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-brand.primary" />
+          {errors.message ? <span className="mt-2 block text-xs text-rose-600">{errors.message.message}</span> : null}
         </label>
         <button type="submit" disabled={isSubmitting} className="inline-flex w-full items-center justify-center rounded-full bg-brand.gold px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-[#b08f5d] disabled:cursor-not-allowed disabled:opacity-70">
           {isSubmitting ? 'Sending...' : 'Send Inquiry'}
         </button>
-        {submitted ? <p className="text-sm text-emerald-300">Thank you! Your inquiry has been sent. We will contact you shortly.</p> : null}
+        {submitted ? <p className="text-sm text-emerald-600">Thank you! Your inquiry has been sent. We will contact you shortly.</p> : null}
       </form>
     </div>
   );
