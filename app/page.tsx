@@ -10,6 +10,7 @@ import { ContactForm } from '@/components/ContactForm';
 import { EstimatorPanel } from '@/components/EstimatorPanel';
 import { companyHighlights, serviceList, featuredProjects, testimonials, blogPosts } from '@/lib/data';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import { HeroImage } from '@/components/HeroImage';
 
 export default function HomePage() {
   return (
@@ -20,16 +21,7 @@ export default function HomePage() {
         {/* ── HERO ── */}
         <section className="relative flex items-center justify-start bg-[#0f1b33] overflow-hidden" style={{ minHeight: '92vh' }}>
           <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute hero-ken-burns" style={{ inset: '-7%' }}>
-              <Image
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=90"
-                alt="Premium construction skyline"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="opacity-25"
-                priority
-              />
-            </div>
+            <HeroImage />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f1b33]/80 via-[#0f1b33]/50 to-transparent" />
           <div className="relative container py-28">

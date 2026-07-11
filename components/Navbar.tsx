@@ -19,13 +19,14 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <div className="container flex items-center justify-between py-4">
-        <Link href="/" className="flex items-center gap-4">
-          <div className="relative h-11 w-11 overflow-hidden rounded-md border border-slate-200 bg-slate-100">
-            <Image src="/assets/logo.jpg" alt="Hatkar Construction" fill style={{ objectFit: 'cover' }} />
-          </div>
-          <div>
-            <p className="text-sm font-semibold tracking-[0.12em] uppercase text-[#0f1b33]">Hatkar Construction</p>
-            <p className="text-xs text-[#c4922a] tracking-[0.08em]">& Consulting Firm</p>
+        <Link href="/" className="flex items-center">
+          <div className="relative h-12 w-44 overflow-hidden bg-white">
+            <Image
+              src="/assets/hatkar-logo.jpg"
+              alt="Hatkar Construction & Consulting"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
+            />
           </div>
         </Link>
 
