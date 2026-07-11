@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Hatkar Construction & Consulting Firm delivers luxury homes, structural engineering, interior architecture and turnkey consulting across Karnataka.',
   openGraph: {
     title: 'Hatkar Construction & Consulting',
-    description: 'Premium construction, architecture, engineering and consulting services led by Er. Pramod Hatkar.',
+    description: 'Premium construction, architecture, engineering and consulting services led by Er. Pramod Hatker.',
     type: 'website',
   },
 };

@@ -19,15 +19,17 @@ export default function HomePage() {
 
         {/* ── HERO ── */}
         <section className="relative flex items-center justify-start bg-[#0f1b33] overflow-hidden" style={{ minHeight: '92vh' }}>
-          <div className="absolute inset-0">
-            <Image
-              src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=90"
-              alt="Premium construction skyline"
-              fill
-              style={{ objectFit: 'cover' }}
-              className="opacity-25"
-              priority
-            />
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute hero-ken-burns" style={{ inset: '-7%' }}>
+              <Image
+                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1920&q=90"
+                alt="Premium construction skyline"
+                fill
+                style={{ objectFit: 'cover' }}
+                className="opacity-25"
+                priority
+              />
+            </div>
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0f1b33]/80 via-[#0f1b33]/50 to-transparent" />
           <div className="relative container py-28">
@@ -40,7 +42,7 @@ export default function HomePage() {
                 Building Karnataka's<br />Future, One<br />Structure at a Time.
               </h1>
               <p className="text-base md:text-lg text-slate-300 leading-8 max-w-xl mb-10">
-                Er. Pramod Hatkar leads a premium construction firm delivering luxury homes, structural engineering and turnkey build solutions across Karnataka — on time, on budget, with superior craftsmanship.
+                Er. Pramod Hatker leads a premium construction firm delivering luxury homes, structural engineering and turnkey build solutions across Karnataka — on time, on budget, with superior craftsmanship.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -142,7 +144,7 @@ export default function HomePage() {
                   style={{ objectFit: 'cover' }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
-                  <p className="text-white font-serif text-lg font-semibold">Er. Pramod Hatkar</p>
+                  <p className="text-white font-serif text-lg font-semibold">Er. Pramod Hatker</p>
                   <p className="text-slate-300 text-sm">Founder & Principal Engineer</p>
                 </div>
               </div>
@@ -274,9 +276,9 @@ export default function HomePage() {
               </div>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 {[
-                  { label: 'Headquarters', value: 'Bidar, Karnataka' },
+                  { label: 'Address', value: 'Shop No 02, Airport Road, Bidar 585401' },
                   { label: 'Phone', value: '+91 97384 17053' },
-                  { label: 'Email', value: 'contact@hatkarconstruction.com' },
+                  { label: 'Email', value: 'hatkarcncs@gmail.com' },
                   { label: 'Availability', value: 'Mon – Sat, 9 AM – 6 PM' },
                 ].map((info) => (
                   <div key={info.label} className="bg-white border border-slate-200 p-4 rounded-sm">

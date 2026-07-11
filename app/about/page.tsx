@@ -14,7 +14,7 @@ const standards = [
 ];
 
 const milestones = [
-  { year: '2006', event: 'Hatkar Construction founded in Bidar, Karnataka by Er. Pramod Hatkar.' },
+  { year: '2006', event: 'Hatkar Construction founded in Bidar, Karnataka by Er. Pramod Hatker.' },
   { year: '2011', event: 'Expanded into commercial construction and interior design services.' },
   { year: '2016', event: 'Introduced AutoCAD drafting and BIM coordination capabilities.' },
   { year: '2020', event: 'Crossed 150 projects milestone with a team of 45 engineers and architects.' },
@@ -46,7 +46,7 @@ export default function AboutPage() {
               A Premium Construction Firm Shaping Karnataka's Built Environment
             </h1>
             <p className="mt-6 text-slate-300 text-base leading-8 max-w-2xl">
-              Founded by Er. Pramod Hatkar, we combine luxury home building, structural engineering, interior architecture and civil consultancy to deliver world-class buildings with modern aesthetics and lasting performance.
+              Founded by Er. Pramod Hatker, we combine luxury home building, structural engineering, interior architecture and civil consultancy to deliver world-class buildings with modern aesthetics and lasting performance.
             </p>
           </div>
         </section>
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </div>
                 <div className="border border-slate-200 rounded-sm p-5">
                   <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">Founded By</p>
-                  <p className="font-semibold text-[#0d1117]">Er. Pramod Hatkar</p>
+                  <p className="font-semibold text-[#0d1117]">Er. Pramod Hatker</p>
                 </div>
                 <div className="border border-slate-200 rounded-sm p-5">
                   <p className="text-xs text-slate-400 uppercase tracking-wider mb-2">Established</p>

@@ -36,7 +36,7 @@ export function Footer() {
             <div className="space-y-3 text-sm text-slate-400">
               <p className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-[#c4922a] mt-0.5 shrink-0" />
-                Bidar, Karnataka, India
+                Shop No 02, 19-1-193/1, Yadav Vomplex,<br />Airport Road, New Adarsh Colony,<br />Bidar – 585401, Karnataka
               </p>
               <p className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-[#c4922a] shrink-0" />
@@ -44,7 +44,7 @@ export function Footer() {
               </p>
               <p className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-[#c4922a] shrink-0" />
-                contact@hatkarconstruction.com
+                hatkarcncs@gmail.com
               </p>
             </div>
           </div>

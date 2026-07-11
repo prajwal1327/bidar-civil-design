@@ -159,7 +159,7 @@ export default function ProjectsPage() {
                   From a 6,400 sq.ft luxury villa in Bidar to an 18,500 sq.ft apartment complex in Bangalore — Hatkar Construction brings the same level of engineering rigour and aesthetic refinement to every project, regardless of scale.
                 </p>
                 <p className="text-slate-600 text-sm leading-8 mb-8">
-                  We integrate structural design, MEP coordination, interior planning and landscape design into a seamless delivery experience supervised by Er. Pramod Hatkar and his senior engineering team.
+                  We integrate structural design, MEP coordination, interior planning and landscape design into a seamless delivery experience supervised by Er. Pramod Hatker and his senior engineering team.
                 </p>
                 <Link
                   href="/contact"
