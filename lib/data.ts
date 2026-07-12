@@ -1,9 +1,8 @@
 export const companyHighlights = [
-  { value: '210+', label: 'Projects Completed' },
-  { value: '18', label: 'Years Experience' },
-  { value: '140+', label: 'Happy Clients' },
-  { value: '45', label: 'Engineers & Architects' },
-  { value: '92', label: 'Ongoing Projects' },
+  { value: '252+', label: 'Projects Completed' },
+  { value: '15+', label: 'Years Experience' },
+  { value: '300+', label: 'Happy Clients' },
+  { value: '12', label: 'Engineers & Architects' },
 ];
 
 export const partnerLogos = [
@@ -58,19 +57,54 @@ export const featuredProjects = [
 
 export const testimonials = [
   {
-    quote: 'The Hatkar team translated our vision into a stunning home with precise engineering and elegant architecture.',
-    name: 'Mr. Rakesh Sharma',
-    title: 'Homeowner',
+    quote: 'Hatkar Construction delivered our hospital building at Mangalpet with exceptional structural integrity and professionalism. Every deadline was met without compromising quality.',
+    name: 'Dr. Rajashekhar Lakhsetty',
+    title: 'Hospital Building, Mangalpet',
   },
   {
-    quote: 'Professional communication, timely delivery and superior quality set them apart from other construction firms.',
-    name: 'Ms. Priya Desai',
-    title: 'Interior Consultant',
+    quote: 'The Prayavi Hospital project in Bidar was executed with great precision. Er. Pramod and his team understood our medical facility requirements perfectly and delivered beyond expectations.',
+    name: 'Dr. Amar Yarolkar',
+    title: 'Prayavi Hospital, Bidar',
   },
   {
-    quote: 'Their AutoCAD and BIM coordination helped us accelerate approvals and deliver the project without surprises.',
-    name: 'Mr. Naveen Rao',
-    title: 'Construction Manager',
+    quote: 'Building the Prayavi Ayurvedic College and Hospital was a large-scale undertaking. Hatkar Construction managed the entire project with outstanding coordination and quality control.',
+    name: 'Surabhi NGO',
+    title: 'Prayavi Ayurvedic College & Hospital, Bidar',
+  },
+  {
+    quote: "My residential building at Mange Layout came out exactly as I envisioned. The team's attention to detail and use of premium materials made all the difference.",
+    name: 'Suresh Biradar',
+    title: 'Residential Building, Mange Layout',
+  },
+  {
+    quote: 'The apartment project at Shivajinagar, Gumpa was handled with great efficiency. From design to handover, the Hatkar team was transparent and highly responsive.',
+    name: 'Nagesh Chamble',
+    title: 'Apartment, Shivajinagar, Gumpa',
+  },
+  {
+    quote: "Our apartment in Humnabad was delivered on time and within budget. Excellent workmanship and a team that truly cares about the client's satisfaction.",
+    name: 'Kalyankar',
+    title: 'Apartment, Humnabad',
+  },
+  {
+    quote: 'The commercial building at Bhalki reflects the premium standard Hatkar Construction consistently delivers. Solid engineering and a beautiful finish.',
+    name: 'Jyoti Kheni',
+    title: 'Commercial Building, Bhalki',
+  },
+  {
+    quote: 'Our institutional building for Bansal Classes in Bidar was built to the highest specifications. The structural quality and timely completion speak for themselves.',
+    name: 'Bansal Classes',
+    title: 'Institutional Building, Bidar',
+  },
+  {
+    quote: 'I am very pleased with my residential building at Shivanagar, Bidar. Hatkar Construction brought professionalism and craftsmanship to every stage of construction.',
+    name: 'Shivkumar Patil Sikindrapur',
+    title: 'Residential Building, Shivanagar, Bidar',
+  },
+  {
+    quote: 'Our home in Humnabad was built with care and precision. The team maintained great communication throughout and the final result exceeded all our expectations.',
+    name: 'Veeresh Biradar',
+    title: 'Residential Building, Humnabad, Bidar',
   },
 ];
 

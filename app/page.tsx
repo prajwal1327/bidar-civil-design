@@ -60,7 +60,7 @@ export default function HomePage() {
         {/* ── STATS STRIP ── */}
         <section className="bg-[#0d1117] border-b border-white/5">
           <div className="container py-10">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-y-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
               {companyHighlights.map((stat, i) => (
                 <div key={stat.label} className={`text-center ${i > 0 ? 'md:pl-6' : ''}`}>
                   <p className="font-serif text-4xl md:text-5xl font-bold text-white mb-2">{stat.value}</p>
