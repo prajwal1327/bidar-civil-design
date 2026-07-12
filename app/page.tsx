@@ -133,7 +133,7 @@ export default function HomePage() {
                   src="/assets/pramod-hatker.jpg"
                   alt="Er. Pramod Hatker — Founder, Hatkar Construction"
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: 'cover', objectPosition: 'top center' }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
                   <p className="text-white font-serif text-lg font-semibold">Er. Pramod Hatker</p>
