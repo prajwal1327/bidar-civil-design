@@ -93,7 +93,7 @@ export default function ContactPage() {
                   A Premium Construction Partner in Karnataka
                 </h2>
                 <p className="text-slate-600 text-sm leading-8 mb-6">
-                  Hatkar Construction & Consulting has delivered 210+ projects over 18 years. We bring engineering precision, Karnataka approvals expertise and a client-first approach to every engagement.
+                  Hatkar Construction & Consulting has delivered 252+ projects over 15+ years. We bring engineering precision, Karnataka approvals expertise and a client-first approach to every engagement.
                 </p>
               </div>
 

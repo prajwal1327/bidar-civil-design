@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ProjectCard } from '@/components/ProjectCard';
-import { featuredProjects, companyHighlights } from '@/lib/data';
+import { allProjects, companyHighlights } from '@/lib/data';
 import { ArrowRight } from 'lucide-react';
 
 const projectTypes = [
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
               Completed & Ongoing Projects That Define Modern Living
             </h1>
             <p className="mt-6 text-slate-300 text-base leading-8 max-w-2xl">
-              210+ projects delivered across residential, commercial, interiors and luxury villa segments — each one a demonstration of engineering precision and architectural vision.
+              252+ projects delivered across residential, commercial, healthcare and institutional segments — each one a demonstration of engineering precision and architectural vision.
             </p>
           </div>
         </section>
@@ -72,7 +72,7 @@ export default function ProjectsPage() {
         {/* ── STATS ── */}
         <section className="bg-[#0d1117] border-b border-white/5">
           <div className="container py-10">
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-y-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 divide-y md:divide-y-0 md:divide-x divide-white/10">
               {companyHighlights.map((stat, i) => (
                 <div key={stat.label} className={`text-center ${i > 0 ? 'md:pl-6' : ''}`}>
                   <p className="font-serif text-4xl font-bold text-white mb-2">{stat.value}</p>
@@ -124,7 +124,7 @@ export default function ProjectsPage() {
               </p>
             </div>
             <div className="grid gap-8 lg:grid-cols-3">
-              {featuredProjects.map((project) => (
+              {allProjects.map((project) => (
                 <ProjectCard key={project.title} {...project} />
               ))}
             </div>

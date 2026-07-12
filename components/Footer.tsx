@@ -95,7 +95,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-500">
-          <p>© 2026 Hatkar Construction & Consulting. All rights reserved.</p>
+          <p>© 2026 Hatkar Construction & Consulting. Est. 2015. All rights reserved.</p>
           <p>Engineering excellence in architecture, construction and design.</p>
         </div>
       </div>

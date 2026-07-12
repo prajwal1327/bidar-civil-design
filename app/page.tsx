@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="relative container py-28">
             <div className="max-w-3xl">
               <p className="text-xs uppercase tracking-[0.45em] text-[#c4922a] mb-5">
-                Hatkar Construction & Consulting — Bidar, Karnataka
+                Hatkar Construction & Consulting — Est. 2015 · Bidar, Karnataka
               </p>
               <div className="w-14 h-0.5 bg-[#c4922a] mb-8" />
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-white leading-[1.07] mb-8">
@@ -106,7 +106,7 @@ export default function HomePage() {
                   A Trusted Partner for Luxury Construction & Consulting
                 </h2>
                 <p className="text-slate-600 text-sm leading-8 mb-8">
-                  With 18 years of engineering expertise and 210+ projects delivered, Hatkar Construction brings architecture, structural engineering and project management under one roof — ensuring precision, quality and compliance at every stage.
+                  With 15+ years of engineering expertise and 252+ projects delivered, Hatkar Construction brings architecture, structural engineering and project management under one roof — ensuring precision, quality and compliance at every stage.
                 </p>
                 <div className="space-y-4 mb-8">
                   {[
@@ -130,8 +130,8 @@ export default function HomePage() {
               </div>
               <div className="relative h-[520px] rounded-lg overflow-hidden shadow-premium">
                 <Image
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
-                  alt="Hatkar Construction team at work"
+                  src="/assets/pramod-hatker.jpg"
+                  alt="Er. Pramod Hatker — Founder, Hatkar Construction"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -164,6 +164,32 @@ export default function HomePage() {
               >
                 View All Projects <ArrowRight className="h-4 w-4" />
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* ── VIDEO ── */}
+        <section className="py-24 bg-[#0d1117]">
+          <div className="container">
+            <div className="text-center mb-12">
+              <p className="text-xs uppercase tracking-[0.35em] text-[#c4922a] mb-4">Watch Us Build</p>
+              <div className="w-12 h-0.5 bg-[#c4922a] mx-auto mb-6" />
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
+                Craftsmanship in Action
+              </h2>
+              <p className="text-sm text-slate-400 max-w-xl mx-auto leading-7">
+                A glimpse into the quality, precision and dedication that goes into every Hatkar Construction project.
+              </p>
+            </div>
+            <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+              <video
+                controls
+                preload="metadata"
+                poster="/assets/site-sunset.jpg"
+                className="w-full"
+              >
+                <source src="/assets/work-video.mov" type="video/mp4" />
+              </video>
             </div>
           </div>
         </section>
